@@ -8,16 +8,14 @@ import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
-    <div className="bg-neutral-950 min-h-screen text-neutral-200 selection:bg-accent-500/30 selection:text-white">
+    <>
       <Navbar />
-      <main>
-        <Hero />
-        <Work />
-        <About />
-        <Contact />
-      </main>
+      <Hero />
+      <Work />
+      <About />
+      <Contact />
       <Footer />
-    </div>
+    </>
   );
 };
 

@@ -66,7 +66,7 @@ const CustomCursor: React.FC = () => {
         }}
       />
 
-      {/* Trailing Ring - Smooth follow & Scale on hover (White) */}
+      {/* Trailing Ring - Smooth follow & Scale on hover (Black border) */}
       <motion.div
         className="fixed top-0 left-0 w-8 h-8 border border-black rounded-full pointer-events-none z-[9998] hidden md:block"
         style={{
@@ -78,7 +78,7 @@ const CustomCursor: React.FC = () => {
         }}
         animate={{
           scale: isHovering ? 2.5 : 1,
-          backgroundColor: isHovering ? 'rgba(0, 0, 0, 0.2)' : 'transparent',
+          backgroundColor: isHovering ? 'rgba(0, 0, 0, 0.1)' : 'transparent',
           borderWidth: isHovering ? '2px' : '1px',
         }}
         transition={{
